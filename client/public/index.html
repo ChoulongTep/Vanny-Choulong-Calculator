@@ -4,9 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+      }
+      .container {
+        margin: 5% auto 0;
+        width: 310px;
+        padding: 1rem;
+        border: 1px solid black;
+        border-radius: 15px;
+      }
+      #display_value {
+        width: 275px;
+        font-size: 24pt;
+        padding: 25px 15px 15px 15px;
+        margin-bottom: 1rem;
+      }
+      .btns {
+        display: grid;
+        grid-template-columns: 70px 70px 70px 70px;
+        gap: 10px;
+      }
+      button {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        font-size: 12pt;
+        font-weight: 700;
+        border: none;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello World</h1>
-    <h2>Hello World</h2>
+    <div class="container">
+      <div class="display_value">
+        <input type="text" id="display_value" dir="rtl" disabled />
+      </div>
+      <div class="btns">
+        <button>C</button>
+        <button>()</button>
+        <button>%</button>
+        <button>/</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>*</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>-</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>+</button>
+        <button>+/-</button>
+        <button>0</button>
+        <button>.</button>
+        <button>=</button>
+      </div>
+    </div>
   </body>
 </html>
