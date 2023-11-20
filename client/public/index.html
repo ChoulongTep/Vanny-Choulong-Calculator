@@ -9,31 +9,77 @@
 
   <body>
     <div class="container">
-      <div class="display_input_container">
-        <input type="text" name="Num" id="display_input" disabled />
-      </div>
-      <div class="btn_container">
-        <button>C</button>
-        <button>Del</button>
-        <button>%</button>
-        <button>/</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>*</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>-</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>+</button>
-        <button>+/-</button>
-        <button>0</button>
-        <button>.</button>
-        <button>=</button>
-      </div>
+      <form class="calculator">
+        <div class="display_input_container">
+          <input type="text" name="display" id="display_input" disabled />
+        </div>
+        <div>
+          <input
+            value="C"
+            type="button"
+            id="btn"
+            onclick="display.value = ''"
+          />
+          <input
+            value="DEL"
+            type="button"
+            id="btn"
+            onclick="DEL(display.value)"
+          />
+          <input value="." type="button" id="btn" />
+          <input value="/" type="button" id="btn" />
+        </div>
+        <div>
+          <input
+            value="7"
+            type="button"
+            id="btn"
+            onclick="display.value += '7' "
+          />
+          <input
+            value="8"
+            type="button"
+            id="btn"
+            onclick="display.value += '8' "
+          />
+          <input
+            value="9"
+            type="button"
+            id="btn"
+            onclick="display.value += '9' "
+          />
+          <input
+            value="*"
+            type="button"
+            id="btn"
+            onclick="display.value += '*' "
+          />
+        </div>
+        <div>
+          <input value="4" type="button" id="btn" />
+          <input value="5" type="button" id="btn" />
+          <input value="6" type="button" id="btn" />
+          <input value="-" type="button" id="btn" />
+        </div>
+        <div>
+          <input value="1" type="button" id="btn" />
+          <input value="2" type="button" id="btn" />
+          <input value="3" type="button" id="btn" />
+          <input value="+" type="button" id="btn" />
+        </div>
+        <div>
+          <input value="00" type="button" id="btn" />
+          <input value="0" type="button" id="btn" />
+          <input
+            value="="
+            type="button"
+            id="equal_btn"
+            onclick="Calculate_Number(display.value)"
+          />
+        </div>
+      </form>
     </div>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>
